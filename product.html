@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สินค้าทั้งหมด | Body Scent</title>
+  <meta name="description" content="น้ำหอมฉีดตัวและโรลออน Body Scent เลือกกลิ่นตามอารมณ์ Fresh, Sweet, Confident และ Romance">
+  <meta name="theme-color" content="#faf6ef">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Noto+Sans+Thai:wght@300;400&family=Noto+Serif+Thai:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">Body Scent</a>
+      <nav class="site-nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html" aria-current="page">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--page">
+      <div class="container">
+
+        <div class="section__header">
+          <span class="eyebrow">Collection</span>
+          <h1>สินค้าทั้งหมด</h1>
+          <hr class="divider">
+        </div>
+
+        <!-- Filter buttons and product cards are rendered by script.js -->
+        <div id="filter-bar" class="filter-bar" role="group" aria-label="กรองสินค้าตามอารมณ์กลิ่น"></div>
+
+        <div id="product-list" class="product-grid">
+          <noscript><p class="text-center">กรุณาเปิดใช้งาน JavaScript เพื่อดูรายการสินค้า</p></noscript>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Body Scent</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

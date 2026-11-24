@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อ | Body Scent</title>
+  <meta name="description" content="กรอกข้อมูลเพื่อสั่งซื้อสินค้า Body Scent">
+  <meta name="theme-color" content="#faf6ef">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Noto+Sans+Thai:wght@300;400&family=Noto+Serif+Thai:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">Body Scent</a>
+      <nav class="site-nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--page">
+      <div class="container container--narrow">
+
+        <div class="section__header">
+          <span class="eyebrow">Order</span>
+          <h1>สั่งซื้อสินค้า</h1>
+          <hr class="divider">
+        </div>
+
+        <!-- Submission is handled by script.js (do not change these ids) -->
+        <form id="orderForm" class="order-form">
+
+          <div class="field">
+            <label for="customerName">ชื่อลูกค้า</label>
+            <input type="text" id="customerName" name="customerName" required autocomplete="name" placeholder="ชื่อ-นามสกุล">
+          </div>
+
+          <div class="field">
+            <label for="contact">เบอร์โทร / Line</label>
+            <input type="text" id="contact" name="contact" required placeholder="เบอร์โทรศัพท์ หรือ Line ID">
+          </div>
+
+          <div class="field">
+            <label for="items">รายการสินค้า</label>
+            <textarea id="items" name="items" rows="3" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="total">จำนวนเงินรวม (บาท)</label>
+            <input type="text" id="total" name="total" required inputmode="decimal" pattern="[0-9]+(\.[0-9]+)?" title="กรอกเป็นตัวเลข เช่น 89 หรือ 199">
+          </div>
+
+          <div class="field">
+            <label for="note">หมายเหตุ <span class="field__optional">(ไม่บังคับ)</span></label>
+            <textarea id="note" name="note" rows="3" placeholder="เช่น ที่อยู่จัดส่ง หรือช่วงเวลาที่สะดวกให้ติดต่อกลับ"></textarea>
+          </div>
+
+          <div class="order-form__actions">
+            <button type="submit" class="btn btn--solid btn--block">ยืนยันสั่งซื้อ</button>
+          </div>
+
+          <p class="order-form__back"><a href="product.html">← กลับไปเลือกสินค้า</a></p>
+
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Body Scent</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
